@@ -10,5 +10,5 @@ link: http://shenlab.jp/ecosm2021/program/benchmark-challenge.html.
 Finally, we welcome the opportunity for focused discussions of the benchmark controller among relevant researchers.
 
 ## note
-1. Initialization file
+1. Initialization files
     - <font color=Red>"InitialParameter_main.m"</font>：main function
