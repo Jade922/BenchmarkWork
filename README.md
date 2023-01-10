@@ -11,4 +11,6 @@ Finally, we welcome the opportunity for focused discussions of the benchmark con
 
 ## note
 1. Initialization files
-    - <font color=Red>"InitialParameter_main.m"</font>：main function
+    - <font color=Red>"Initial_main.m"</font>：main function;
+    - <font color=Red>"Initial_Lower.m"</font>：initialition function for upper-layer (eco-driving) controller;
+    - <font color=Red>"Initial_Lower.m"</font>：initialition function for lower-layer (PMS) controller function;
