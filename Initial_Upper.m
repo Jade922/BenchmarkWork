@@ -54,7 +54,8 @@ for i = 1:2*p
         end
     end
 end
-% T4 (2p*2) -->> T4 = zeros(size(Ax,1)*p,size(Ax,1));
+% T4 (2p*2) -->> 
+T4 = zeros(size(Ax,1)*p,size(Ax,1));
 T4(1,1) = 1;   T4(2,2) = 1;
 % T5 (1*2p)
 for i = 1:p
