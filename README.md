@@ -11,6 +11,9 @@ Finally, we welcome the opportunity for focused discussions of the benchmark con
 
 ## note 
 1. Initialization files
-    - <font color=Red>"Initial_main.m"</font>：main function;
-    - <font color=Red>"Initial_Upper.m"</font>：initialition function for upper-layer (eco-driving) controller;
-    - <font color=Red>"Initial_Lower.m"</font>：initialition function for lower-layer (PMS) controller function;
+    - <font color=Red>**"Initial_main.m"**</font>：main function;
+    - <font color=Red>**"Initial_Upper.m"**</font>：initialition function for upper-layer (eco-driving) controller;
+    - <font color=Red>**"Initial_Lower.m"**</font>：initialition function for lower-layer (PMS) controller function;
+2. Simulator (**"Benchmark2021Controller.slx"**)
+    
+    This simulator presents the benchmark controller, a two-layer hierarchical control architecture, which incorporates different scales of the connected information. In the upper layer, an MPC-based controller (**"UpperLayerVPlan"**) is designed to plan eco-trajectory and handle traffic rules, with the informed knowledge of the geographical information (e.g., road slope), the traffic lights information, and the future velocity of the preceding vehicle estimated by a GP-based predictor (**"UpperLayerVpredict"**). Then, the planned velocity trajectory is passed on to the driver model (**"DriverModel"**) to determine the reference of traction power. In the lower layer, a real-time power management controller (**"LowerLaverPMP"**) is designed to minimize the fuel consumption where the optimal power split between mechanical engine power and battery electrical power is determined. Details of the controller are elaborated in the model-*Benchmark2021Controller.slx*. 
